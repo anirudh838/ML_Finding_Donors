@@ -14377,8 +14377,12 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <p><strong>Answer: </strong> 
 The model chosen for the prediction was Random Forest Classifier.</p>
 <p>Random Forest Classifier is an ensemble algorithm which creates a set of decision trees from a randomly selected subset of training set which then aggregates the votes from different decision trees to decide the final class of the test object.</p>
-<p>Suppose, there are five number in a training set 0,1,2,3,4 with labels zero, one, two, three, four. The random forest creates three trees {0, 1, 2 }, {1, 2, 3}, {2, 3, 4}. So finally it predicts based on the majority of votes from each of the decision trees made.</p>
-<p>The concept behind ensemble methods is that a group of weak trees can aggregate together to form a stong tree.</p>
+<p>Let's say Ram is planning to buy a car. After an exhaustive car research, he still unclear about what car he needs. He decides to take an opinion from his friend Andy. Before advicing Ram, Andy tries to know Ram's requirements. He follows him up with a few questions like How much are you willing to spend,Are you planning to buy a preowned or brand new car, Do you like to use to it commute to work or pleasure. Based on the answers given by Ram, Andy makes a few assumptions and suggests a car.</p>
+<p>This whole process of asking question falls under the category of <strong>Decision Tree</strong>. In order to get a wider percepective and Andy being Ram's friend there is a chance Andy might not be giving a rational advice. To avoid this, Ram tries to get advice from John, Ali and Sita. This time when he tries to give a little different answers to rest of his friends. Like Ram answered white honda civic sedan when Andy asked do you like white honda civic sedan or blue genesis coupe? This type he might answer Genesis Coupe. After all you're not absolutely sure of your preferences yourself. Maybe the road conditions you drove the civic were completely awesome or may be you chose as it is widely accepted choice. There are situations where you liked both cars but to different reasons. Like when John asked due you like Tesla Model S or Tesla Model 3. This could lead to a confusion as both of them are electric. John assumed I liked both as they were electric. But here I like Tesla Model S due to its design and Model 3 due to it be affordable. To minimize such errors, you give them slightly unsettled answers and you avoid narrow questions. By maintaining such rules, you get a pool of advices. This pool of advises are called as a <strong>Random Forest</strong>.</p>
+<p><strong>References:</strong></p>
+<ul>
+<li><a href="https://www.quora.com/How-does-randomization-in-a-random-forest-work">https://www.quora.com/How-does-randomization-in-a-random-forest-work</a></li>
+</ul>
 
 </div>
 </div>
@@ -14577,7 +14581,17 @@ Final F-score on the testing data: 0.7314
 <li>Age</li>
 <li>Marital-Status</li>
 </ul>
-<p>Capital Gain and Capital Loss are two factors which can important in predicting the income class. Occupation is the other factor which helps in predicting the person's income. Age directly relates to the level of income. Marital-Status denotes the person more likely to settle or is already settled.</p>
+<p>Capital Gain is calculated when an asset is sold or exchanged at a prize which is higher than its norm. Similarly, Capital Loss is calulculated when an asset is sold or exchanged at a prize which is lower than it norm. Here Norm is asset's purchase prize, commissions, improvements minus depreciation. These both can be used to calculate where the individual's income level falls. This can be predicted either at estimating the tax bracket.</p>
+<p>Occupation is the other factor which helps in predicting the person's income. This can be explained taking two persons from the same company a developer and a manager. The manager makes more than the developer. Here different parameters effect the salary but occupation surely effect the income.</p>
+<p>Th Age directly relates to the level of proficiency. If seen a developer who has 13 years of experience in the industry is paid more than the person who is starting fresh. Thus age is one of the criteria in estimating the pay-scale.</p>
+<p>Marital-Status denotes the person more likely to settle or is already settled. And also in a survey conducted it was seen that married soldiers are paid a higher annual salary than military singles.</p>
+<p><strong> References:</strong></p>
+<ol>
+<li><a href="https://imgur.com/NbYbNrs">https://imgur.com/NbYbNrs</a></li>
+<li><a href="http://people.ischool.berkeley.edu/~hal/people/hal/NYTimes/2004-07-29.html">http://people.ischool.berkeley.edu/~hal/people/hal/NYTimes/2004-07-29.html</a></li>
+<li><a href="https://www.nerdwallet.com/blog/loans/student-loans/average-salary-by-age/">https://www.nerdwallet.com/blog/loans/student-loans/average-salary-by-age/</a></li>
+<li><a href="https://www.irs.gov/uac/ten-important-facts-about-capital-gains-and-losses">https://www.irs.gov/uac/ten-important-facts-about-capital-gains-and-losses</a></li>
+</ol>
 
 </div>
 </div>
@@ -14967,11 +14981,16 @@ JOVAxzvK+4L3Vln/B+WQyQFgDvgE3Ab6/jRPktYqMjs9vZAkSdL/ygqgJElSwxgAJUmSGsYAKEmS
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-The features predicted to a maximum extent match the five features above. Except for the education-num.</p>
+The features predicted were the almost the same to the five features except for the education-num. I thought education-num also would be one of the main features in predicting income levels.</p>
 <ul>
-<li>Occupation: This did not show up as one in the five features. </li>
-<li>Education-num: This was one among the five features, as education number is highly related to low or high income levels. </li>
+<li>Occupation: Occupation may be one of the important feature but surely is not independent by itself. It is dependent on education-num, age to an extent. It surely could be considered a feature may be in the sixth position.</li>
+<li>Education-num: This was one among the five features, as education number is highly related to low or high income levels. Pay-levels increase can be seen in individual who has a associates degree compared to an individual with a bachelors degree to a individual with a masters degree to a PhD degree. </li>
 </ul>
+<p><strong> References:</strong></p>
+<ol>
+<li><a href="http://www.payscale.com/college-salary-report/degrees-and-majors-lifetime-earnings">http://www.payscale.com/college-salary-report/degrees-and-majors-lifetime-earnings</a></li>
+<li><a href="https://www.bls.gov/emp/ep_chart_001.htm">https://www.bls.gov/emp/ep_chart_001.htm</a></li>
+</ol>
 
 </div>
 </div>
